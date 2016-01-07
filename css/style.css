@@ -44,7 +44,7 @@ ul{
 	opacity: 0.5;
 }
 .mast-head{
-	padding-top: 120px;
+	padding-top: 60px;
 	padding-bottom: 20px;
 	background-image: -moz-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
@@ -82,11 +82,17 @@ ul{
 }
 
 .frame-box{
-	width: 355px;
+	width: 100%;
 	display: none;
 	position: absolute;
     top: 107px;
-    left: 32px;	
+    left:0;
+    right: 0;
+    margin: auto;
+    padding: 0 24px;
+    -webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 .frame-box img{
@@ -121,6 +127,9 @@ ul{
 .frame{
 	width: 100%;
 	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .description{
@@ -305,9 +314,8 @@ footer img{
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-
-    /*src: url('../fonts/slick.eot');*/
-    /*src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');*/
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
     src: url('../fonts/slick.woff') format('woff');
 }
 /* Arrows */
@@ -381,11 +389,11 @@ footer img{
 }
 .slick-prev:before
 {
-    content: 'â†';
+    content: '\2039';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: 'â†’';
+    content: '\2039';
 }
 
 .slick-next
@@ -399,11 +407,11 @@ footer img{
 }
 .slick-next:before
 {
-    content: 'â†’';
+    content: '\203A';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: 'â†';
+    content: '\203A';
 }
 
 /* Dots */
@@ -510,8 +518,12 @@ footer img{
 
 @media only screen and (min-width : 550px) {
 
+	.mast-head{
+		padding-top: 90px;
+	}
+
 	.mast-head p{
-		font-size: 48px;
+		font-size: 36px;
 	}
 	
     h2{
@@ -529,8 +541,26 @@ footer img{
 	.explore{
 		height: 600px;
 	}
-	.frame{
+	.frame, .frame-box{
 		width: 90%;
 	}
-    
+}
+
+
+
+@media only screen and (min-width : 992px) {
+
+	.mast-head{
+		padding-top: 60px;
+	}
+
+	.mast-head .logo{
+		margin-top: 120px;
+	}
+
+	.mast-head p{
+		font-size: 48px;
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
 }
