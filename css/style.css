@@ -77,13 +77,37 @@ ul{
 	padding-bottom: 90px;
 }
 
+.frame-box{
+	width: 362px;
+	height: 643px;
+	display: none;
+}
+
+.frame-box.current{
+	display: block;
+}
+
 .explore h2{
 	margin-top: 110px;
 	margin-bottom: 90px;
 }
 
+.explore h3{
+	color: #e94402;
+}
+
+.partsOfApp li p{
+	display: none;
+}
+
+.partsOfApp li.current p{
+	display: block;
+}
+
 .frame{
 	width: 100%;
+	position: absolute;
+	
 }
 
 .description{
