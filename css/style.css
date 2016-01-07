@@ -39,10 +39,18 @@ ul{
 .play-store{
 	opacity: 0.5;
 }
-
 .mast-head{
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-image: -moz-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
 }
-
+.model-photo{
+	display: block;
+	margin: 0 auto;
+	width: 450px;
+}
 .mast-head .logo{
 	width: 143px;
 	height: 65px;
@@ -51,7 +59,7 @@ ul{
 }
 .mast-head p{
 	font-family: "Didot";
-	font-size: 48px;
+	font-size: 30px;
 	text-align: center;
 }
 .mast-head ul{
@@ -61,6 +69,22 @@ ul{
 	display: inline-block;
 }
 
+.explore{
+	background-color: #fff;
+	height: 650px;
+	overflow: hidden;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.explore h2{
+	margin-top: 110px;
+	margin-bottom: 90px;
+}
+
+.frame{
+	width: 420px;
+}
 
 .description{
 	background-color: #393a3d;
@@ -79,6 +103,7 @@ ul{
 .interesting h2{
 	color: #fff;
 	text-align: center;
+	margin-bottom: 10px;
 }
 .interesting p{
 	color: #fff;
@@ -104,4 +129,26 @@ footer img{
 	margin: 0 auto;
 	width: 110px;
 	height: 50px;
+}
+
+
+
+@media only screen and (min-width : 551px) {
+
+	.mast-head p{
+		font-size: 48px;
+	}
+	
+    h2{
+		font-size: 32px;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+
+	p{
+		font-size: 18px;
+	}
+    
 }
