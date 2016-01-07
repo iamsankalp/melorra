@@ -618,6 +618,14 @@ footer li{
 @media only screen and (max-width : 320px) {
 
     .frame-box{
+    	top: 84px;
+	    padding: 0 22px;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+
+    .frame-box{
     	top: 73px;
 	    padding: 0 18px;
 	}
