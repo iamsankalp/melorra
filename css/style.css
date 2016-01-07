@@ -31,6 +31,10 @@ ul{
 	list-style: none;
 }
 
+.relative{
+	position: relative;
+}
+
 .app-store, .play-store{
 	width: 184px;
 	height: 60px;
@@ -39,10 +43,18 @@ ul{
 .play-store{
 	opacity: 0.5;
 }
-
 .mast-head{
+	padding-top: 60px;
+	padding-bottom: 20px;
+	background-image: -moz-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(216,216,214) 0%, rgb(234,235,230) 50%, rgb(236,237,232) 100%);
 }
-
+.model-photo{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
 .mast-head .logo{
 	width: 143px;
 	height: 65px;
@@ -51,7 +63,7 @@ ul{
 }
 .mast-head p{
 	font-family: "Didot";
-	font-size: 48px;
+	font-size: 30px;
 	text-align: center;
 }
 .mast-head ul{
@@ -61,11 +73,69 @@ ul{
 	display: inline-block;
 }
 
+.explore{
+	background-color: #fff;
+	height: 400px;
+	overflow: hidden;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.frame-box{
+	width: 100%;
+	display: none;
+	position: absolute;
+    top: 108px;
+    left:0;
+    right: 0;
+    margin: auto;
+    padding: 0 28px;
+    -webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.frame-box img{
+	width: 100%;
+}
+
+.frame-box.current{
+}
+
+.explore h2{
+	margin-top: 110px;
+	margin-bottom: 90px;
+}
+
+.explore h3{
+	color: #e94402;
+}
+
+.partsOfApp li p{
+	display: none;
+	color: #393a3d;
+}
+
+.partsOfApp li a{
+	text-decoration: none;
+	background-color: red;
+}
+
+.partsOfApp li.current p{
+}
+
+.frame{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
 
 .description{
 	background-color: #393a3d;
 	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-bottom: 60px;
 	color: #fff;
 	text-align: center;
 }
@@ -79,6 +149,7 @@ ul{
 .interesting h2{
 	color: #fff;
 	text-align: center;
+	margin-bottom: 10px;
 }
 .interesting p{
 	color: #fff;
@@ -96,7 +167,7 @@ ul{
 footer{
 	background-color: #393a3d;
 	padding-top: 45px;
-	padding-bottom: 45px;
+	padding-bottom: 20px;
 }
 
 footer img{
@@ -104,4 +175,438 @@ footer img{
 	margin: 0 auto;
 	width: 110px;
 	height: 50px;
+}
+
+footer hr{
+	width: 120px;
+	opacity: 0.1;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer ul{
+	text-align: center;
+}
+
+footer li{
+	display: inline-block;
+	padding: 7px;
+}
+
+.social img{
+	width: 40px;
+	height: 40px;
+	opacity: 0.4;
+}
+
+.social img:hover{
+	opacity: 1;
+}
+
+
+
+
+/***************** SLICK SLIDER *********************/
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/***************** SLICK SLIDER END ABOVE *********************/
+
+
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick.woff') format('woff');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '\2039';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '\2039';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '\203A';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '\203A';
+}
+
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -45px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: 'â€¢';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+/***************** SLICK THEME *********************/
+@media only screen and (min-width : 420px) {
+	.explore{
+		height: 480px;
+	}
+}
+
+@media only screen and (min-width : 480px) {
+	.explore{
+		height: 550px;
+	}
+}
+
+@media only screen and (min-width : 550px) {
+
+	.mast-head{
+		padding-top: 90px;
+	}
+
+	.mast-head p{
+		font-size: 36px;
+	}
+	
+    h2{
+		font-size: 32px;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+	.explore{
+		height: 600px;
+	}
+	.frame, .frame-box{
+		width: 90%;
+	}
+}
+
+
+
+@media only screen and (min-width : 992px) {
+
+	.mast-head{
+		padding-top: 60px;
+	}
+
+	.mast-head .logo{
+		margin-top: 120px;
+	}
+
+	.mast-head p{
+		font-size: 48px;
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width : 375px) {
+
+    .frame-box{
+    	top: 88px;
+	    padding: 0 22px;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+
+    .frame-box{
+    	top: 73px;
+	    padding: 0 18px;
+	}
 }
