@@ -206,5 +206,19 @@
 			return false;
 		});
 	</script>
+	<script type="text/javascript">
+		var isMobile = {
+		    Android: function() {
+		        return navigator.userAgent.match(/Android/i);
+		    },
+		    iOS: function() {
+		        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		    },
+		};
+
+		if( isMobile.iOS() ) $(".play-store").css('display', 'none');
+		if( isMobile.Android() ) $(".app-store").css('display', 'none');
+
+	</script>
 
 </html>
