@@ -31,6 +31,10 @@ ul{
 	list-style: none;
 }
 
+.relative{
+	position: relative;
+}
+
 .app-store, .play-store{
 	width: 184px;
 	height: 60px;
@@ -78,13 +82,18 @@ ul{
 }
 
 .frame-box{
-	width: 362px;
-	height: 643px;
+	width: 355px;
 	display: none;
+	position: absolute;
+    top: 107px;
+    left: 32px;	
+}
+
+.frame-box img{
+	width: 100%;
 }
 
 .frame-box.current{
-	display: block;
 }
 
 .explore h2{
@@ -98,16 +107,20 @@ ul{
 
 .partsOfApp li p{
 	display: none;
+	color: #393a3d;
+}
+
+.partsOfApp li a{
+	text-decoration: none;
+	background-color: red;
 }
 
 .partsOfApp li.current p{
-	display: block;
 }
 
 .frame{
 	width: 100%;
 	position: absolute;
-	
 }
 
 .description{
@@ -514,7 +527,7 @@ footer img{
 	}
 
 	.explore{
-		height: 650px;
+		height: 600px;
 	}
 	.frame{
 		width: 90%;
