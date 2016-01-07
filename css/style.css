@@ -85,11 +85,11 @@ ul{
 	width: 100%;
 	display: none;
 	position: absolute;
-    top: 107px;
+    top: 108px;
     left:0;
     right: 0;
     margin: auto;
-    padding: 0 24px;
+    padding: 0 28px;
     -webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	box-sizing: border-box;
@@ -135,7 +135,7 @@ ul{
 .description{
 	background-color: #393a3d;
 	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-bottom: 60px;
 	color: #fff;
 	text-align: center;
 }
@@ -592,5 +592,21 @@ footer li{
 		font-size: 48px;
 		margin-top: 60px;
 		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width : 375px) {
+
+    .frame-box{
+    	top: 88px;
+	    padding: 0 22px;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+
+    .frame-box{
+    	top: 73px;
+	    padding: 0 18px;
 	}
 }
