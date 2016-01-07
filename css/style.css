@@ -1,0 +1,107 @@
+@font-face{
+    font-family: "Didot";
+    src: url("../fonts/didot.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "Gotham";
+    src: url("../fonts/gotham.ttf");
+}
+
+body{
+    font-family: "Gotham";
+}
+
+h2{
+	font-size: 24px;
+    letter-spacing: 0;
+}
+
+h3{
+	font-size: 20px;
+    letter-spacing: 0;
+}
+
+p{
+	font-size: 16px;
+    letter-spacing: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+.app-store, .play-store{
+	width: 184px;
+	height: 60px;
+	padding: 5px;
+}
+.play-store{
+	opacity: 0.5;
+}
+
+.mast-head{
+}
+
+.mast-head .logo{
+	width: 143px;
+	height: 65px;
+	display: block;
+	margin: 0 auto;
+}
+.mast-head p{
+	font-family: "Didot";
+	font-size: 48px;
+	text-align: center;
+}
+.mast-head ul{
+	text-align: center;
+}
+.mast-head li{
+	display: inline-block;
+}
+
+
+.description{
+	background-color: #393a3d;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	color: #fff;
+	text-align: center;
+}
+
+
+.interesting{
+	background-color: #e94402;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+.interesting h2{
+	color: #fff;
+	text-align: center;
+}
+.interesting p{
+	color: #fff;
+	text-align: center;
+	opacity: 0.5;
+}
+.interesting ul{
+	text-align: center;
+}
+.interesting li{
+	display: inline-block;
+}
+
+
+footer{
+	background-color: #393a3d;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+footer img{
+	display: block;
+	margin: 0 auto;
+	width: 110px;
+	height: 50px;
+}
