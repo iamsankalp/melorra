@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
 
-    <meta name="robots" content="noindex, nofollow">
-
     <!-- First Things First
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="UTF-8" />
@@ -31,8 +29,42 @@
 
     <!-- Analytics
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript">
-    </script>
+    <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71570592-2', 'auto');
+		  ga('send', 'main');
+
+		  var url = document.URL;
+		  urlparams = url.split("?");
+		  var paramdata=""; 
+
+		  if(urlparams.length==2) { //To track the app referers
+		        paramdata=urlparams[1];
+			}
+
+		function trackGPlayClicked(position){
+		ga('send', 'event', 'googleplay', 'clicked',position);
+		if(paramdata!="") {
+		 window.location.href = "https://play.google.com/store/apps/details?id=com.melorra" + "&"+paramdata;
+		}else {
+		 window.location.href = "https://play.google.com/store/apps/details?id=com.melorra" ;
+		}
+		}
+
+		function trackiTunesClicked(position){
+		ga('send', 'event', 'itunes', 'clicked',position);
+		if(paramdata!="") {
+		window.location.href = "https://itunes.apple.com/in/app/melorra/id1069319843?mt=8" + "&" + paramdata;
+		}else {
+		window.location.href = "https://itunes.apple.com/in/app/melorra/id1069319843?mt=8" ;
+		}
+		}
+
+		</script>
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -65,7 +97,7 @@
 						<p>Jewellery inspired by fashion.</p>
 						<ul>
 							<li>								
-								<a title="Download Melorra on iPhone" href="https://itunes.apple.com/in/app/melorra/id1069319843?mt=8">
+								<a onclick="trackiTunesClicked('top')" title="Download Melorra on iPhone" href="https://itunes.apple.com/in/app/melorra/id1069319843?mt=8">
 									<img class="app-store" alt="App Store" src="img/app_store.png">
 								</a>
 							</li>
