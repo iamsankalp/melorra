@@ -147,6 +147,18 @@ ul{
 
 }
 
+.description li img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 240px;
+}
+
+.igi-logo{
+    width: 210px !important;
+    margin-bottom: 30px !important;
+}
+
 .interesting{
 	background-color: #e94402;
 	padding-top: 60px;
