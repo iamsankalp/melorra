@@ -39,6 +39,12 @@ ul{
 	width: 184px;
 	height: 60px;
 	padding: 5px;
+    opacity: 0.9;
+}
+
+.app-store:hover, .play-store:hover{
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 .mast-head{
@@ -219,6 +225,7 @@ footer li{
 
 .social img:hover{
 	opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 
