@@ -558,7 +558,7 @@ footer li{
 
 
 
-.intro2{
+.intro{
 background: url("../img/background_mobile.png");
     position: absolute;
     background-repeat: no-repeat;
@@ -655,7 +655,7 @@ background: url("../img/background_mobile.png");
 		width: 90%;
 	}
 
-    .intro2{
+    .intro{
         background: url("../img/background_tablet.png");
         position: absolute;
         background-repeat: no-repeat;
@@ -706,7 +706,7 @@ background: url("../img/background_mobile.png");
 		margin-bottom: 30px;
 	}
 
-    .intro2{
+    .intro{
         background: url("../img/background_desktop.png");
         position: absolute;
         background-repeat: no-repeat;
@@ -755,16 +755,3 @@ background: url("../img/background_mobile.png");
 	    padding: 0 18px;
 	}
 }
-
-.intro img{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.intro1 img{
-    display: inline;
-    width: 33%;
-    margin: 0;
-    padding: 0;
-}}
