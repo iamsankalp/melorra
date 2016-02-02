@@ -81,7 +81,7 @@ ul{
 	background-color: #fff;
 	height: 400px;
 	overflow: hidden;
-	padding-top: 90px;
+	padding-top: 155%;
 	padding-bottom: 90px;
 }
 
@@ -656,7 +656,7 @@ background: url("../img/background_mobile.png");
 	}
 
     .intro2{
-        background: url("../img/background_desktop.png");
+        background: url("../img/background_tablet.png");
         position: absolute;
         background-repeat: no-repeat;
         background-size: contain;
@@ -667,7 +667,7 @@ background: url("../img/background_mobile.png");
 
     .sticker{
         width: 80%;
-        margin-top: 25%;
+        margin-top: 42%;
     }
 
     .sticker .logo{
@@ -677,8 +677,8 @@ background: url("../img/background_mobile.png");
         font-size: 30px;
     }
 
-    .downloadTop{
-        padding-top: 52%;
+    .downloadTop, .explore{
+        padding-top: 75%;
     }
 }
 
@@ -706,10 +706,29 @@ background: url("../img/background_mobile.png");
 		margin-bottom: 30px;
 	}
 
-    .sticker{
-        width: 50%;
-        margin-top: 32%;
+    .intro2{
+        background: url("../img/background_desktop.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0 auto;
     }
+
+    .sticker{
+        width: 40%;
+        margin-top: 32%;
+        padding: 20px;
+    }
+
+    .sticker .logo{
+        margin-top: px;
+        margin-bottom: 30px;
+    }
+
+    .explore{
+        padding-top: 52%;
     }
 }
 
