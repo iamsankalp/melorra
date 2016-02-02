@@ -81,7 +81,7 @@ ul{
 	background-color: #fff;
 	height: 400px;
 	overflow: hidden;
-	padding-top: 90px;
+	padding-top: 155%;
 	padding-bottom: 90px;
 }
 
@@ -556,6 +556,63 @@ footer li{
     color: black;
 }
 
+
+
+.intro{
+background: url("../img/background_mobile.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+.downloadTop{
+    background-color: #f5f5f5;
+    padding-top: 155%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+.downloadTop h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.downloadTop p{
+    text-align: center;
+    opacity: 0.5;
+}
+.downloadTop ul{
+    text-align: center;
+}
+.downloadTop li{
+    display: inline-block;
+}
+
+.sticker{
+    position: relative;
+    z-index: 99;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    padding: 10px;
+    margin-top: 90%;
+}
+
+.sticker .logo{
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+.sticker p{
+    font-family: "Didot";
+    font-size: 22px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
 /***************** SLICK THEME *********************/
 @media only screen and (min-width : 420px) {
 	.explore{
@@ -597,6 +654,32 @@ footer li{
 	.frame, .frame-box{
 		width: 90%;
 	}
+
+    .intro{
+        background: url("../img/background_tablet.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    .sticker{
+        width: 80%;
+        margin-top: 42%;
+    }
+
+    .sticker .logo{
+        width: 143px;
+    }
+    .sticker p{
+        font-size: 30px;
+    }
+
+    .downloadTop, .explore{
+        padding-top: 75%;
+    }
 }
 
 
@@ -622,6 +705,31 @@ footer li{
 		margin-top: 60px;
 		margin-bottom: 30px;
 	}
+
+    .intro{
+        background: url("../img/background_desktop.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    .sticker{
+        width: 40%;
+        margin-top: 32%;
+        padding: 20px;
+    }
+
+    .sticker .logo{
+        margin-top: px;
+        margin-bottom: 30px;
+    }
+
+    .explore{
+        padding-top: 52%;
+    }
 }
 
 @media only screen and (max-width : 375px) {
