@@ -228,6 +228,20 @@ footer li{
     transition: opacity 0.5s ease;
 }
 
+.footer-links{
+    margin-left: 10px;
+}
+
+footer .footer-links a, a:visited{
+    color: #fff;
+    opacity: 0.4;
+}
+
+footer .footer-links a:hover{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
 
 
 
